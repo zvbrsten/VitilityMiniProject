@@ -1,0 +1,91 @@
+body{
+  
+    background-color: rgb(20, 20, 72);
+    color:rgb(0, 168, 240);
+    font-family:sans-serif;
+
+    
+  }
+
+h1{
+    text-align: center;
+    font-size: 2rem;
+
+}  
+
+.cardscontainer{
+    padding:15px;
+    
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;   
+
+}
+.cards h2{
+    text-align: center;
+    color: white;
+
+
+}
+.card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    
+
+}
+.card div{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70%;
+    margin-bottom: 20px;
+    align-items: center;
+    
+}
+.input-group{
+    gap:30px;
+    max-width: 40%;
+}
+select{
+    width:35%;
+    background-color: rgba(0, 255, 251, 0.791);
+    font-weight: 600;
+    border-radius: 30px;
+    height: 40px;
+    text-align: center;
+    font-size: 1rem;
+}
+option{
+    font-weight: 600;
+}
+.button-container{
+    margin-top:90px;
+    text-align: center;
+    
+}
+.button-container button{
+    width:15%;
+    background-color: rgba(0, 255, 251, 0.791);
+    font-weight: 600;
+    border-radius: 30px;
+    height: 40px;
+    border: none;
+    font-size: 1.2rem;
+}
+.result{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    color:skyblue;
+}
+.result span{
+    color:rgb(0, 238, 255);
+    font-weight: 700;
+    
+}
