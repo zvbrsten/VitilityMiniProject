@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Itim&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <h1>CGPA Calculator</h1>
+    <div class="container">
+        <div class="component">
+          <h2>CGPA till previous Semester</h2>
+          <input id="CGPAold" name="CGPAold" />
+        </div>
+        <div class="component">
+          <h2>Credits till previous Semester</h2>
+          <input id="CreditsOld" name="CreditsOld" />
+        </div>
+        <div class="component">
+          <h2>Desired CGPA </h2>
+          <input id="DesiredCGPA" name="ExpectedGPA" />
+        </div>
+        <div class="component">
+          <h2>Credits taken this Semester</h2>
+          <input id="CreditsTaken" name="CreditsTaken" />
+        </div>
+        <div class="button-container">
+          <button onclick="calculateCGPA()" id="calculateButton">Calculate CGPA</button>
+        </div>
+        <div class="result">Required GPA : <span id="RequiredGPA"></span></div>
+      </div>
+  </body>
+</html>
