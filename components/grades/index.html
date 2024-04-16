@@ -3,11 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Grade Predictor</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Itim&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+
     <script src="script.js"></script>
 </head>
 <body>
-    
+    <h1>Grade Predictor</h1>
+    <div class="container">
+        <div class="option-container">
+            <h2>Select Marks Type:</h2>
+            <select id="marksType" onchange="selectMarksType(this.value)">
+                <option value="CAT">CAT</option>
+                <option value="FAT">FAT</option>
+                <option value="Total Marks">Total Marks</option>
+            </select>
+        </div>
+        <div class="component" id="marksInput">
+            <h2>Marks Obtained</h2>
+            <input id="marks" name="marks" />
+        </div>
+        <div class="component" id="meanInput">
+            <h2>Class Average</h2>
+            <input id="mean" name="mean" />
+        </div>
+        <div class="component" id="sdInput" >
+            <h2>Select Standard Deviation:</h2>
+            <select id="sd" onchange="getStandardDeviation(this.value)">
+                <option value="high" title="8-11 for CAT, 15-20 for FAT, Total Marks">High</option>
+                <option value="medium" title="6-8 for CAT, 10-15 for FAT, Total Marks">Medium</option>
+                <option value="low" title="0-6 for CAT, 0-10 for FAT, Total Marks">Low</option>
+            </select>
+        </div>
+        <div class="button-container">
+            <button onclick="calculateGrade()" id="calculateButton">Calculate Grade</button>
+        </div>
+        <div class="result" id="result" style="display:none;">Expected Grade : <span id="grade"></span></div>
+    </div>
 </body>
 </html>
