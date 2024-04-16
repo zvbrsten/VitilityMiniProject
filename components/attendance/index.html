@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Itim&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js"></script>
 </head>
 <body>
-    
+    <h1>Attendance Calculator</h1>
+    <div class="component" id="marksInput">
+        <h2>Total Classes Attended till now</h2>
+        <input id="attended" name="attended" />
+    </div>
+    <div class="component" id="marksInput">
+        <h2>Total Classes Conducted Till now</h2>
+        <input id="conducted" name="conducted" />
+    </div>
+    <div class="component" id="meanInput">
+        <h2>Total Classes left before upcoming Exam(CAT/FAT)</h2>
+        <input id="leftclasses" name="leftclasses" />
+    </div>
+    <div class="component" id="result">
+        <h2>Number of classes to attend for 75% attendance:<p id="attendanceResult"></p></h2>
+        
+    </div>
+
+    <!-- Button to trigger the calculation -->
+    <button onclick="calculateAttendance()">Calculate</button>
 </body>
 </html>
