@@ -89,3 +89,20 @@ option{
     font-weight: 700;
     
 }
+/* Media query for devices with a maximum width of 600px  */
+@media only screen and (max-width: 600px) {
+    .input-group {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    select {
+      width: 80%; 
+      max-width: none; 
+    }
+  
+    .button-container button {
+      width: 80%; 
+      max-width: none; 
+    }
+  }
