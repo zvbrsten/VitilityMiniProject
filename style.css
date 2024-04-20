@@ -57,12 +57,10 @@ body{
 
   
 .homedescription{
-  position:absolute;
-  top:225px;
-  left:500px;
+
   color:rgb(0, 168, 240);
   font-size: 2rem;
-  margin-left:100px;
+  margin-left:400px;
   text-align: center;
   overflow: hidden; 
   white-space: nowrap; 
