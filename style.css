@@ -255,4 +255,12 @@ footer p:hover{
   margin-top: 100px;
   height: 40%;
 }
+.social-icons a:hover{
+  color:rgb(100, 100, 2);
+  font-size: 20px;
+}
+footer p:hover{
+  color:rgb(100, 100, 2);
+  font-size: 10px;
+}
 }
