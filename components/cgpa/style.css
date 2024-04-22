@@ -24,7 +24,7 @@ h1{
 .component{
     margin:20px;
 }
-input{
+.component input{
     width:100%;
     max-width: 200px;
     background-color: rgba(0, 255, 251, 0.791);
@@ -68,15 +68,30 @@ input{
 
 
 @media only screen and (max-width: 600px) {
-    .container {
+    /* .container {
       max-width: 90%; 
-    }
+    }*/
   
-    .input{
+    .component input{
         width: 50%;
-
+        height: 100px;
     } 
+    /*
     .button-container button {
       width: 90%; 
-    }
+    } */
+
+    h1 {
+        font-size: 1.5rem; 
+      }
+    
+      h2 {
+        margin: 10px; 
+      }
+    
+      p {
+        font-size: 1.2rem; 
+        margin: 10px; 
+      }
+
   }
