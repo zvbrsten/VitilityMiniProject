@@ -42,6 +42,13 @@ a{
   color:#000000;
   transition:all 0.5s ease;
 }
+.books:hover h2{
+  color: #000000;
+}
+.books:hover a{
+  color:#2d2d2d;
+  font-weight: bold;
+}
 /*border-radius: 20px;
 background-color: rgba(255, 255, 255, 0.19);
 box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.55);
@@ -55,10 +62,7 @@ transition: all 0.5s ease;*/
   border-radius: 5px;
   
 }
-.books:hover a{
-  color:#2d2d2d;
-  font-weight: bold;
-}
+
 @media only screen and (max-width: 600px) {
     .container {
       grid-template-columns: repeat(2, 1fr); 
