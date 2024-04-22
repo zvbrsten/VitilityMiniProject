@@ -1,54 +1,46 @@
-body{
-  
-
-  
-    background:url("https://1.bp.blogspot.com/-YwPmkkidXdQ/YFcHEWzpo1I/AAAAAAAAF1w/yZXs9Y920ZsytB9_upMsNjP8oE-Ei20uACLcBGAsYHQ/s16000/1.png") center / cover no-repeat fixed;;
-    color:rgb(0, 168, 240);
-    font-family:Dosis;
-
-    
-  
-    text-align: center;
-    
-  }
-
-h1{
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 50px;
-
-} 
-h2{
-  margin: 30px;
+body {
+  background: url("https://1.bp.blogspot.com/-YwPmkkidXdQ/YFcHEWzpo1I/AAAAAAAAF1w/yZXs9Y920ZsytB9_upMsNjP8oE-Ei20uACLcBGAsYHQ/s16000/1.png") center/cover no-repeat fixed;
+  color: rgb(0, 168, 240);
+  font-family: Dosis;
+  text-align: center;
 }
-button{
-  width:15%;
-    background-color: rgba(0, 255, 251, 0.791);
-    font-weight: 600;
-    border-radius: 30px;
-    height: 30px;
-    border: none;
-    font-size: 1rem;
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  /*margin-bottom: 30px;*/ 
+  margin:20px;
+  margin-bottom: 100px;
 }
-input{
-  width:15%;
+
+h2 {
+  margin-top: 20px; 
+}
+
+button, input {
+  width: 100%; 
+  max-width: 200px; 
   background-color: rgba(0, 255, 251, 0.791);
   font-weight: 600;
+  border-radius: 20px; 
+  height: 25px; 
   border: none;
-  height: 25px;
-  border-radius: 20px;
-  text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  margin:20px;
+  padding-left: 10px;
 }
-.component{
-  margin: 0px;
-}
-p{
-  font-size: 1.8rem;
+
+p {
+  font-size: 1.4rem; 
   font-weight: bold;
-  color:aqua;
-  margin:50px;
+  color: aqua;
 }
+#result{
+  margin-top: 60px;
+}
+/*.component{
+  margin:20px
+}*/
 
 @media only screen and (max-width: 600px) {
   h1 {
@@ -64,3 +56,17 @@ p{
     margin: 10px; 
   }
 }
+
+/*.container {
+  max-width: 90%; 
+}
+
+.input{
+    width: 50%;
+
+} 
+.button-container button {
+  width: 90%; 
+}
+}
+*/
