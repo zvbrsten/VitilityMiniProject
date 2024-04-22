@@ -105,8 +105,7 @@ body{
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color:#15adff;
   box-shadow: 0 0 10px #15adff;
-
-
+  transform: translateY(-10px);
 }
 .card:hover h2{
   color: #000000;
@@ -132,7 +131,7 @@ body{
 .footer {
   /* background-color:rgba(0,168,240,0.8); */
    /*background-color:#27009f; */
-   background-color:#6b168a;
+   background-color:#6d1c8a;
   /*background-color:#373dc8; */
   /*background-color:#28009f96;*/
   color:rgba(255, 255, 255, 0.73);
@@ -209,6 +208,12 @@ footer p:hover{
   justify-content: center;
   align-items: center;
 }
+.contact{
+  display: inline-block;
+  justify-content: center;
+  align-items: ;
+  
+}
 
 @media only screen and (max-width: 768px) {
   .homeheading {
@@ -255,12 +260,11 @@ footer p:hover{
   margin-top: 100px;
   height: 40%;
 }
-.social-icons a:hover{
-  color:rgb(254, 199, 2);
-  font-size: 20px;
-}
+
 footer p:hover{
   color:rgb(254, 199, 2);
-  font-size: 10px;
+}
+.social-icons a:hover{
+  color:rgb(254, 199, 2);
 }
 }
