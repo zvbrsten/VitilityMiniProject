@@ -13,11 +13,12 @@ h1{
 
 }  
 .course{
-  align-items: center;  
+  align-items:center;  
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
+
 a{
     color:white;
     margin:15px;
@@ -34,7 +35,19 @@ a{
     padding:20px;
     margin:20px;
 }
-
+.container :hover{
+  background-color:#15adff; 
+  box-shadow: 0 0 10px #15adff;
+  transition: background-color 0.3s, 
+  color:#000000;
+}
+.course:hover {
+  color: #000000;
+}
+.course:hover a {
+  color:#2d2d2d;
+  font-weight: bold;
+}
 @media only screen and (max-width: 600px) {
     .container {
       grid-template-columns: repeat(2, 1fr); 
