@@ -42,16 +42,15 @@ h1{
     
 }
 .button-container button{
-    width:10%;
+    width:100%;
     max-width: 200px;
-    background-color: rgba(0, 255, 251, 0.791);
+    background-color:rgba(0, 255, 251, 0.791);
     font-weight: 600;
-    border-radius: 30px;
-    height: 40px;
+    border-radius: 20px;
+    height: 25px;
     border: none;
     font-size: 1.2rem;
     margin-top: 100px;
-    
 }
 .result{
     text-align: center;
