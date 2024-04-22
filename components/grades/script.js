@@ -1,12 +1,11 @@
 function calculateGrade() {
-    // Retrieve input values
+   
     var marks = parseFloat(document.getElementById("marks").value);
     var mean = parseFloat(document.getElementById("mean").value);
 
     console.log("Marks:", marks);
     console.log("Mean:", mean);
-
-    // Perform grade calculation
+    
     var sdRange = getStandardDeviation();
     var totalMarks = marks;
     var grade;
@@ -31,14 +30,13 @@ function calculateGrade() {
 
     console.log("Grade:", grade);
 
-    // Display result
     var result = document.getElementById("result");
     result.style.display = "block";
     document.getElementById("grade").innerText = grade;
 }
 
 function getStandardDeviation() {
-    // Retrieve standard deviation value based on selected marks type and SD type
+    
     var marksType = document.getElementById("marksType").value;
     var sdType = document.getElementById("sd").value;
     
@@ -46,22 +44,22 @@ function getStandardDeviation() {
         case 'CAT':
             switch(sdType) {
                 case 'High':
-                    return { min: 8, max: 11 }; // High SD value range for CAT
+                    return { min: 8, max: 11 }; 
                 case 'medium':
-                    return { min: 6, max: 8 }; // Medium SD value range for CAT
+                    return { min: 6, max: 8 }; 
                 case 'low':
-                    return { min: 0, max: 6 }; // Low SD value range for CAT
+                    return { min: 0, max: 6 }; 
                 
             }
         case 'FAT':
         case 'Total Marks':
             switch(sdType) {
                 case 'high':
-                    return { min: 15, max: 20 }; // High SD value range for FAT and Total Marks
+                    return { min: 15, max: 20 };
                 case 'medium':
-                    return { min: 10, max: 15 }; // Medium SD value range for FAT and Total Marks
+                    return { min: 10, max: 15 }; 
                 case 'low':
-                    return { min: 0, max: 10 }; // Low SD value range for FAT and Total Marks
+                    return { min: 0, max: 10 }; 
             }
         default:
             return { min: 0, max: 0 };
@@ -69,7 +67,7 @@ function getStandardDeviation() {
 }
 
 function selectMarksType(marksType) {
-    // Show the relevant input fields based on the selected marks type
+    
     var marksInput = document.getElementById("marksInput");
     var meanInput = document.getElementById("meanInput");
     var sdInput = document.getElementById("sdInput");
@@ -80,7 +78,6 @@ function selectMarksType(marksType) {
     sdInput.style.display = "block";
     result.style.display = "none";
 
-    // Customize input fields based on the selected marks type
     switch(marksType) {
         case 'CAT':
             document.getElementById("marks").placeholder = "Enter CAT Marks";
